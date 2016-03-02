@@ -1,0 +1,14 @@
+diff --git a/deps/openssl/openssl.gyp b/deps/openssl/openssl.gyp
+index a935aee..1b22891 100644
+--- deps/openssl/openssl.gyp
++++ deps/openssl/openssl.gyp
+@@ -172,7 +172,7 @@
+         ]
+       }],
+       ['is_clang==1 or gcc_version>=43', {
+-        'cflags': ['-Wno-error=unused-command-line-argument', '-Wno-error=parentheses-equality'],
++        'cflags': ['-Wno-error=unused-command-line-argument', '-Wno-error=parentheses-equality', '-no-integrated-as'],
+       }],
+       ['OS=="solaris"', {
+         'defines': ['__EXTENSIONS__'],
+
